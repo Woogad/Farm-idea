@@ -1,4 +1,4 @@
-import logo from './logo.jpg';
+import logo from './logo2.png';
 import Navbar from './Navbar';
 import * as ai from "react-icons/ai";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
