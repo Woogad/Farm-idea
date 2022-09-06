@@ -1,17 +1,13 @@
 import './App.css';
-import Home from './Home';
-import Recom from './Recom';
-import Slider from './Slider';
-import Navbar from './Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import Menu from './components/Menu';
+import PostIdea from './components/PostIdea';
+import Recom from './components/Recom';
+import Slider from './components/Slider';
 
 function App() {
   return (
     <>
-      <Home />
-      <Slider />
-      <Recom />
+      <PostIdea />
     </>
   );
 }

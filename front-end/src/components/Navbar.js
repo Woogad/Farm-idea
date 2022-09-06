@@ -12,7 +12,6 @@ function Navbar() {
 
   return (
     <>
-
       <div className='navbar'>
         <Link to="#" className='menu-bars'>
           <div class='text-black'>
