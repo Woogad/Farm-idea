@@ -1,15 +1,17 @@
 import './App.css';
-import Menu from './components/Menu';
-import PostIdea from './components/PostIdea';
-import Recom from './components/Recom';
-import Slider from './components/Slider';
-
+import IdeaInvestPage from './Page/IdeaInvestPage';
+import HomePage from './Page/HomePage';
+import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
-    <>
-      <PostIdea />
-    </>
-  );
+    <div>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/idea-inves' element={<IdeaInvestPage />} />
+      </Routes>
+    </div>
+  )
+
 }
 
 export default App;
