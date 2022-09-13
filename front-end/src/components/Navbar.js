@@ -3,7 +3,7 @@ import * as Falcons from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
-import { IconContext } from 'react-icons';
+// import { IconContext } from 'react-icons';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -14,7 +14,7 @@ function Navbar() {
     <>
       <div className='navbar'>
         <Link to="#" className='menu-bars'>
-          <div class='text-black'>
+          <div className='text-black'>
             <Falcons.FaBars onClick={showSidebar} />
           </div>
         </Link>
@@ -22,9 +22,9 @@ function Navbar() {
       <div >
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle' class='ml-52 text-2xl'>
+            <li className='navbar-toggle' >
               <Link to='#' className='menu-bars'>
-                <div class='text-slate-100'>
+                <div className='text-slate-100'>
                   <Falcons.FaRegWindowClose />
                 </div>
               </Link>
@@ -34,7 +34,7 @@ function Navbar() {
               return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
-                    <div class='mt-0.5'>
+                    <div className='mt-0.5'>
                       {item.icon}
                     </div>
                     <div>

@@ -2,9 +2,9 @@ function TextRe() {
 
     return (
         <main>
-            <div class="text-base flex justify-center mt-3">
-                <div class="text-2xl ">
-                    <a>แนะนำสำหรับคุณ</a>
+            <div className="text-base flex justify-center mt-3">
+                <div className="text-2xl ">
+                    <label>แนะนำสำหรับคุณ</label>
                 </div>
             </div>
         </main>
