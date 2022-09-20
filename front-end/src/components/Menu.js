@@ -1,7 +1,7 @@
 import logo from '../asset/Image/logo.png';
 import Navbar from './Navbar';
 import * as ai from "react-icons/ai";
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Menu() {
 
     return (
@@ -18,7 +18,7 @@ function Menu() {
 
                 <div className="ml-40">
                     <Link to="/">
-                        <img className="w-25 h-20" src={logo} />
+                        <img className="w-25 h-20" src={logo} alt='logo' />
                     </Link>
                 </div>
 
@@ -30,8 +30,8 @@ function Menu() {
                     <div className="ml-1">
 
                     </div>
-                    <a href="#" className="ml-5 hover:text-blue-800">Login</a>
-                    <a href="#" className="ml-5 hover:text-blue-800">Sign in</a>
+                    <a href="/" className="ml-5 hover:text-blue-800">Login</a>
+                    <a href="/" className="ml-5 hover:text-blue-800">Sign in</a>
                 </div>
             </div>
 

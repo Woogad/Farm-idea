@@ -5,7 +5,7 @@ import * as Iolcons from "react-icons/io";
 export const SidebarData = [
     {
         title: 'บอร์ดไอเดีย',
-        path: '/',
+        path: '/idea-post',
         icon: <Falcons.FaAddressBook />,
         cName: 'nav-text'
     },

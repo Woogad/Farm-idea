@@ -30,7 +30,7 @@ export default function Slider() {
     }
 
     return (
-        <div className="bg-neutral-300 py-3 mt-1">
+        <div className="bg-green-800 py-3 mt-1">
             <div className="container-slider">
                 {dataSlider.map((obj, index) => {
                     return (
