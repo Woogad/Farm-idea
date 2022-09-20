@@ -9,7 +9,7 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: farm_idea
     ports:
-      - "4406:3306"
+      - "3306:3306"
     volumes:
       - "./Back-end/database/data:/var/lib/mysql"
   web-api:

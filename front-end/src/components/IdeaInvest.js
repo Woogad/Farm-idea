@@ -1,6 +1,4 @@
 import React from 'react'
-import Menu from './Menu';
-
 import { useState } from 'react';
 
 function IdeaInvest() {
