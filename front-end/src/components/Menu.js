@@ -28,10 +28,9 @@ function Menu() {
                         <ai.AiOutlineSearch />
                     </div>
                     <div className="ml-1">
-
                     </div>
                     <a href="/" className="ml-5 hover:text-blue-800">Login</a>
-                    <a href="/" className="ml-5 hover:text-blue-800">Sign in</a>
+                    <Link to="/register" className='ml-5 hover:text-blue-800'>Sign up</Link>
                 </div>
             </div>
 
