@@ -27,7 +27,7 @@ function Api_postIdea() {
       </div>
       <div className="grid grid-cols-3 mt-2">
         {post.map(e => {
-          return <PostIdeaData id={e.ID} title={e.title} body={e.body} contract={e.contract} />
+          return <PostIdeaData ID={e.ID} title={e.title} body={e.body} contract={e.contract} />
         })}
       </div>
     </div>
