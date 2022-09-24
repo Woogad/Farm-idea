@@ -6,7 +6,7 @@ function IdeaPostPage() {
   return (
     <div>
       <Menu />      
-      <ApiPostIdea/>
+      <ApiPostIdea />
     </div>
   )
 }
