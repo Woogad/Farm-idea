@@ -23,25 +23,25 @@ const Modal = ({ setModalOn }) => {
             .then((response) => {
                 setPost(response.data);
             })
-        alert("สร้างโพสต์เรียบร้อย");
-        window.location.reload()
+        alert("สร้างโพสต์เรียบร้อย")
+        window.location.reload();
     }
 
     return (
 
-        <div className="bg-zinc-200 opacity-100 fixed inset-0 z-50   ">
+        <div className="bg-zinc-200 fixed inset-0 z-50">
 
-            <div className="flex h-screen justify-center items-center ">
+            <div className="flex h-screen justify-center items-center">
 
-                <div className="   bg-white py-7 px-40 border-4 border-green-500 rounded-xl ">
+                <div className="bg-white py-7 px-40 border-4 border-green-500 rounded-xl">
 
                     <div className="">
 
-                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 ">ชื่อไอเดีย</label>
+                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 ">ชื่อไอเดีย</label>
                         <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" name="" id="" class="w-[500px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="title" required />
-                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">ติดต่อ</label>
+                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">ติดต่อ</label>
                         <input value={contract} onChange={(e) => setContract(e.target.value)} type="text" name="" id="" class="w-[500px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="contract" required />
-                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">รายละเอียด</label>
+                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">รายละเอียด</label>
                         <textarea value={body} onChange={(e) => setBody(e.target.value)} name="" id="" class="w-[500px] h-[200px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="" required />
 
                     </div>
