@@ -10,7 +10,14 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - "./Back-end/database/data:/var/lib/mysql"
+      - "mysqldatabase:/var/lib/mysql"
+volumes:
+  mysqldatabase:
+  driver: azure_file
+  driver_opts:
+    share_name: sqldata
+    storage_account_name: farmidea
+
   web-api:
     build: "./Back-end/"
     ports:
