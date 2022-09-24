@@ -33,7 +33,6 @@ function Api_postIdea() {
         </div>
       </div>
       <div className="grid grid-cols-3 mt-2">
-
         {post.filter((e) => {
           if (searchTerm == "") {
             return e
