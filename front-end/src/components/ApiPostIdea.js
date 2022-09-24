@@ -42,6 +42,7 @@ function Api_postIdea() {
           } 
         }).map(e => {
           return <PostIdeaData title={e.title} body={e.body} contract={e.contract} />
+          
         })}
       </div>
     </div>
