@@ -17,7 +17,6 @@ func Connect() {
 		panic(err)
 	}
 
-	db.AutoMigrate(&models.IdeaPost{})
+	db.AutoMigrate(&models.IdeaPost{}, &models.IdeaInvest{})
 	DB = db
-
 }
