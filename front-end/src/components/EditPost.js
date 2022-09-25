@@ -1,22 +1,21 @@
 import axios from 'axios'
-import { useState } from "react"
+import { useState, useContext } from "react"
+import dataPostIdeaContext from './Data/DataPostIdeaContext';
 
 
-const EditPost = ({ setUpdate, ID }) => {
+const EditPost = ({ setUpdate, }) => {
+    const post = useContext(dataPostIdeaContext)
     const [, setPost] = useState([]);
-    const [title, setTitle] = useState('');
-    const [contract, setContract] = useState('');
-    const [body, setBody] = useState('');
-    
-
+    const [title, setTitle] = useState(post.title);
+    const [contract, setContract] = useState(post.contract);
+    const [body, setBody] = useState(post.body);
     const apiURL = "http://localhost:8050/"
-
     const handleCancelClick = () => {
         setUpdate(false)
     }
 
     function PostUpdate() {
-        axios.put(`${apiURL}` + ID, {
+        axios.put(`${apiURL}` + post.ID, {
             title: title,
             contract: contract,
             body: body
@@ -24,7 +23,7 @@ const EditPost = ({ setUpdate, ID }) => {
             .then((response) => {
                 setPost(response.data);
             })
-        alert("สร้างโพสต์เรียบร้อย")
+        alert("แก้ไข้โพสเรียบร้อย")
         window.location.reload();
     }
 
