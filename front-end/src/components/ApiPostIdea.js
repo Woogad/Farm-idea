@@ -38,10 +38,10 @@ function Api_postIdea() {
             return e
           } else if (e.title.toLowerCase().includes(searchTerm.toLowerCase())) {
             return e
-          } 
+          }
         }).map(e => {
-          return <PostIdeaData title={e.title} body={e.body} contract={e.contract} />
-          
+          return <PostIdeaData ID={e.ID} title={e.title} body={e.body} contract={e.contract} />
+
         })}
       </div>
     </div>

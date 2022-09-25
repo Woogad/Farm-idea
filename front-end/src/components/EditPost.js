@@ -2,22 +2,21 @@ import axios from 'axios'
 import { useState } from "react"
 
 
-const EditPost = ({ setUpdate }) => {
-    const [ ,setPost] = useState([]);
+const EditPost = ({ setUpdate, ID }) => {
+    const [, setPost] = useState([]);
     const [title, setTitle] = useState('');
     const [contract, setContract] = useState('');
     const [body, setBody] = useState('');
+    
 
-
-    const apiURL = "http://localhost:8050"
+    const apiURL = "http://localhost:8050/"
 
     const handleCancelClick = () => {
         setUpdate(false)
     }
-    
-    
+
     function PostUpdate() {
-        axios.put(`${apiURL}/`, {
+        axios.put(`${apiURL}` + ID, {
             title: title,
             contract: contract,
             body: body
@@ -29,6 +28,8 @@ const EditPost = ({ setUpdate }) => {
         window.location.reload();
     }
 
+
+
     return (
 
         <div className="bg-zinc-200 fixed inset-0 z-50">
@@ -39,11 +40,11 @@ const EditPost = ({ setUpdate }) => {
 
                     <div className="">
 
-                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 ">ชื่อไอเดีย</label>
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 ">ชื่อไอเดีย</label>
                         <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" name="" id="" class="w-[500px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="title" required />
-                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">ติดต่อ</label>
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">ติดต่อ</label>
                         <input value={contract} onChange={(e) => setContract(e.target.value)} type="text" name="" id="" class="w-[500px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="contract" required />
-                        <label for=""class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">รายละเอียด</label>
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-900 mt-4 ">รายละเอียด</label>
                         <textarea value={body} onChange={(e) => setBody(e.target.value)} name="" id="" class="w-[500px] h-[200px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-500 p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-black" placeholder="" required />
 
                     </div>
