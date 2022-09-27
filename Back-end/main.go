@@ -8,6 +8,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func init() {
+	config.LoadEnv()
+	config.Connect()
+}
+
 func main() {
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
@@ -15,7 +20,6 @@ func main() {
 		AllowMethods: []string{"POST", "PUT", "PATCH", "DELETE"},
 		AllowHeaders: []string{"Content-Type,access-control-allow-origin, access-control-allow-headers"},
 	}))
-	config.Connect()
 	routes.IdeaPostRoute(router)
 	router.Run(":8080")
 }
