@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import IdeaPostPage from './Page/IdeaPostPage';
 import RegisterPage from './Page/RegisterPage';
 import InterestPage from './Page/InterestPage';
-
 function App() {
   return (
     <div>
