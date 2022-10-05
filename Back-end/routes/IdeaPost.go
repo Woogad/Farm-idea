@@ -7,9 +7,9 @@ import (
 )
 
 func IdeaPostRoute(router *gin.Engine) {
-	router.GET("/", controller.GetIdeaPost)
-	router.POST("/", controller.PostIdeaPost)
-	router.GET("/:id", controller.GetbyIdIdeaPost)
-	router.DELETE("/:id", controller.DeleteIdeaPost)
-	router.PUT("/:id", controller.UpdateIdeaPost)
+	router.GET("/idea-post", controller.GetIdeaPost)
+	router.POST("/idea-post", controller.PostIdeaPost)
+	router.GET("/idea-post/:id", controller.GetbyIdIdeaPost)
+	router.DELETE("/idea-post/:id", controller.DeleteIdeaPost)
+	router.PUT("/idea-post/:id", controller.UpdateIdeaPost)
 }
