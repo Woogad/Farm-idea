@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  web-api:
+    build: "lostopr999/farm-idea-web-api:farm-idea-web-api"
+    ports:
+      - "8050:8050"
+    volumes:
+      - "./Back-end/:/app"
