@@ -16,4 +16,5 @@ func IdeaPostRoute(router *gin.Engine) {
 
 func IdeaInvestRoute(router *gin.Engine) {
 	router.GET("/idea-invest", controller.GetIdeaInvest)
+	router.POST("/idea-invest", controller.PostIdeaInvest)
 }
