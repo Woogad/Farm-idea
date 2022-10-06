@@ -21,5 +21,6 @@ func main() {
 		AllowHeaders: []string{"Content-Type,access-control-allow-origin, access-control-allow-headers"},
 	}))
 	routes.IdeaPostRoute(router)
+	routes.IdeaInvestRoute(router)
 	router.Run(":8050")
 }
