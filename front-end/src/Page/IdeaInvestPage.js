@@ -7,6 +7,8 @@ export default function IdeaInvestPage() {
         <>
             <Menu />
             <IdeaInvest />
+
+            dfgfdgdfgdfgdfgdfg
         </>
     )
 }
