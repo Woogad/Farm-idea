@@ -15,6 +15,7 @@ function App() {
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/interest' element={<InterestPage />} />
       </Routes>
+      fsdjlkfjdsalkfjdsjflkdsajflkdsj hehe
     </div>
   )
 }
