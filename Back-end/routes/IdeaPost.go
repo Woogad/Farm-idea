@@ -13,8 +13,3 @@ func IdeaPostRoute(router *gin.Engine) {
 	router.DELETE("/idea-post/:id", controller.DeleteIdeaPost)
 	router.PUT("/idea-post/:id", controller.UpdateIdeaPost)
 }
-
-func IdeaInvestRoute(router *gin.Engine) {
-	router.GET("/idea-invest", controller.GetIdeaInvest)
-	router.POST("/idea-invest", controller.PostIdeaInvest)
-}
