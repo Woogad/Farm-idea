@@ -18,7 +18,7 @@ function IdeaInvest() {
 
 
     return (
-        <div>
+        <div className='h-[1200px]' style={{ backgroundImage: `url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/52/11/86579339b4ca51c.jpg")`,backgroundSize:"cover" }}>
             <div class="flex justify-start mt-10">
                 <div className="grid grid-cols-6 mt-2">
                     {post.map(e => {

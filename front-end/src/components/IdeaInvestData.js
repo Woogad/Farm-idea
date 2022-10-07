@@ -11,7 +11,7 @@ function IdeaInvestData(props) {
         <div>
             <dataInvestideaContext.Provider value={props}>
                 <div class="ml-6">
-                    <div class="rounded-lg shadow-lg bg-green-100">
+                    <div class="rounded-lg shadow-lg bg-lime-400">
                         <div class="p-20">
                             <p>
                                 ID: {ID}

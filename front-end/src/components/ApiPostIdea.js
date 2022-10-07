@@ -21,8 +21,8 @@ function Api_postIdea() {
 
 
   return (
-    <div>
-      <div className="">
+    <div className='h-[1200px]' style={{ backgroundImage: `url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/52/11/86579339b4ca51c.jpg")`,backgroundSize:"cover" }}>
+      <div >
         <p className='flex justify-center text-4xl font-medium mt-20'>บอร์ดไอเดีย</p>
         <Popup />
         <div className="flex justify-center mt-5">

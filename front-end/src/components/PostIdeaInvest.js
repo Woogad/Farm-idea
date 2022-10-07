@@ -23,7 +23,7 @@ function PostIdeaInvest() {
 
   return (
     <div className=''>
-      <div className='bg-green-900 ml-4 mr-4 mt-5 rounded-lg px-10 py-1'>
+      <div className='bg-lime-600 ml-4 mr-4 mt-5 rounded-lg px-10 py-1'>
         <div className='flex justify-between ml-80 mr-80'>
           <div>
             <label className='text-slate-50'>ชื่อโปรเจค</label>
@@ -60,11 +60,11 @@ function PostIdeaInvest() {
       </div>
       <p className='ml-5 mt-10 text-2xl font-bold'>รายละเอียดไอเดีย</p>
       <form>
-        <div className="ml-4 mr-4 py-2 px-4 mt-5 mb-5 rounded-t-lg bg-green-900">
+        <div className="ml-4 mr-4 py-2 px-4 mt-5 mb-5 rounded-t-lg bg-lime-00">
           <textarea rows="10" className="px-0 w-full text-lg  bg-green-900 text-white placeholder-gray-400" placeholder="รายละเอียด..." ></textarea>
         </div>
         <div className="flex justify-center mr-10 mb-10">
-          <button type="button" className="inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-lg leading-tight  rounded hover:bg-blue-700 hover:text-slate-50">โพสต์ไอเดีย</button>
+          <button type="button" className="inline-block px-6 py-2 border-2 border-gray-900 text-gray-900 font-medium text-lg leading-tight  rounded hover:bg-blue-700 hover:text-slate-50">โพสต์ไอเดีย</button>
         </div>
       </form>
 
