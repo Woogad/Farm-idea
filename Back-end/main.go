@@ -23,5 +23,6 @@ func main() {
 	}))
 	routes.IdeaPostRoute(router)
 	routes.IdeaInvestRoute(router)
+	routes.ImageRoute(router)
 	router.Run(":8050")
 }
