@@ -27,10 +27,10 @@ function PostIdeaData(props) {
     return (
         <>
             <dataPostIdeaContext.Provider value={props}>
-                <div className='mt-4 ml-5 p-8 bg-green-500 shadow-lg font-sm text-2xl rounded-lg'>
+                <div className='mt-4 ml-5 p-8 bg-lime-400 shadow-lg font-sm text-2xl rounded-lg'>
                     <p className="text-center font-semibold">{title}</p>
 
-                    <div className="my-4 py-3 text-lg break-all bg-green-600 rounded-md">
+                    <div className="my-4 py-3 text-lg break-all bg-lime-100 rounded-md">
                         <p>{body}</p>
 
                     </div>
