@@ -2,6 +2,7 @@ import React from 'react'
 import IdeaInvest from '../components/IdeaInvest'
 import Menu from '../components/Menu'
 
+
 function IdeaInvestPage() {
   return (
     <div>
@@ -13,3 +14,4 @@ function IdeaInvestPage() {
 }
 
 export default IdeaInvestPage
+
