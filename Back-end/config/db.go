@@ -18,6 +18,6 @@ func Connect() {
 		panic(err)
 	}
 
-	db.AutoMigrate(&models.IdeaPost{}, &models.IdeaInvest{})
+	db.AutoMigrate(&models.IdeaPost{}, &models.IdeaInvest{}, &models.Images{})
 	DB = db
 }

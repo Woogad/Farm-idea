@@ -14,6 +14,7 @@ func init() {
 }
 
 func main() {
+
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
 		AllowOrigins: []string{"http://localhost:3000"},
@@ -22,5 +23,6 @@ func main() {
 	}))
 	routes.IdeaPostRoute(router)
 	routes.IdeaInvestRoute(router)
+	routes.ImageRoute(router)
 	router.Run(":8050")
 }
