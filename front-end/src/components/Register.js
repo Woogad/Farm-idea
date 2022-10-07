@@ -1,7 +1,7 @@
 function Register() {
     return (
         <div className='flex justify-center'>
-            <div className='p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  w-80 h-fit mt-36 '>
+            <div className='p-6 max-w-sm bg-white rounded-lg border border-lime-500 shadow-md dark:bg-gray-800 dark:border-gray-700  w-80 h-fit mt-36 '>
                 <div className='flex justify-center text-3xl'>
                     <h1>สมัครสมาชิก</h1>
                 </div>
@@ -26,7 +26,7 @@ function Register() {
 
 
                         <div className='flex justify-center'>
-                            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            <button class="bg-transparent hover:bg-blue-500 text-lime-700 font-semibold hover:text-white py-2 px-4 border border-lime-500 hover:border-transparent rounded">
                                 สมัคร
                             </button>
                         </div>
