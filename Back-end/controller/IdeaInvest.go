@@ -20,3 +20,14 @@ func PostIdeaInvest(c *gin.Context) {
 	config.DB.Create(&new_idea_invest)
 	c.JSON(http.StatusCreated, &new_idea_invest)
 }
+
+func DeleteideaInvest(c *gin.Context) {
+	id := c.Param("id")
+	idea_invest := []models.IdeaInvest{}
+	if result := config.DB.Where("id = ?", id).Delete(&idea_invest); result.Error != nil {
+		c.IndentedJSON(http.StatusInternalServerError,
+			gin.H{"Error": result.Error.Error()})
+		return
+	}
+	c.IndentedJSON(http.StatusNoContent, &idea_invest)
+}
