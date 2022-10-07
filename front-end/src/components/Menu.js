@@ -10,7 +10,7 @@ function Menu() {
                 <div className="flex justify-between">
                     <Navbar />
                     <div className=" mt-6 ">
-                        <Link to="/idea-inves">
+                        <Link to="/idea-post-inves">
                             <label className="mx-5 mt-6 hover:text-blue-800 cursor-pointer">Start a project</label>
                         </Link>
                     </div>

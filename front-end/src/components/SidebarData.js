@@ -11,7 +11,7 @@ export const SidebarData = [
     },
     {
         title: 'บอร์ดงาน',
-        path: '/',
+        path: '/idea-inves',
         icon: <Iolcons.IoIosPaper />,
         cName: 'nav-text'
     },
